@@ -12,7 +12,10 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.7.3",
     "@truffle/hdwallet-provider": "^2.0.14",
-    "dotenv": "^16.0.1"
+    "bee-queue": "^1.4.0",
+    "bull": "^4.10.0",
+    "dotenv": "^16.0.1",
+    "web3": "^1.8.0"
   },
   "devDependencies": {
     "truffle-plugin-verify": "^0.5.28"

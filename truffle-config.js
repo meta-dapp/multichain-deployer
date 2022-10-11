@@ -11,7 +11,7 @@ module.exports = {
     networks: chains,
     compilers: {
         solc: {
-            version: '0.8.9',
+            version: '0.8.17',
             settings: {
                 optimizer: {
                     enabled: true,

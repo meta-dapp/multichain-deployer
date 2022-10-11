@@ -1,9 +1,8 @@
 require('dotenv').config()
 const HDWalletProvider = require('@truffle/hdwallet-provider')
 
-const mnemonics = process.env.MNEMONICS
+const privateKeys = [process.env.PRIVATE_KEY]
 const walletAddress = process.env.WALLET_ADDRESS
-const addressIndex = process.env.ADDRESS_INDEX
 
 module.exports = (
     network_id,
@@ -12,9 +11,8 @@ module.exports = (
     return {
         network_id,
         provider: () => new HDWalletProvider(
-            mnemonics,
-            url,
-            addressIndex
+            privateKeys,
+            url
         ),
         from: walletAddress,
         gas: 5000000,
